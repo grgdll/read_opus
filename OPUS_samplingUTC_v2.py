@@ -340,9 +340,12 @@ if __name__ == "__main__":
                 OPUS_set_RTC()
 
             # initialize dictionary with results
-            row_dict = {'timestamp': [],
-                            'Abs': np.empty(200),
-                            't_spectrum': []
+            row_dict = {
+                        'Timestamp': [],
+                        'Abs': np.empty(200),
+                        'T_spectrum': [],
+                        'T_internal': [],
+                        'Flash_count': [],
                         }
 
             print('trigger calibrated measurement')
@@ -399,13 +402,13 @@ if __name__ == "__main__":
 
 
             #### check if it's the start of the new hour and, if so, save hourly file
-            if pd.Timestamp.now().hour != t0_spectrum.hour: # save a file every hour
+            if pd.Timestamp.now().minute != t0_spectrum.minute: # save a file every hour
             # xMin = 2 # save a file every xMin
             # if np.mod(t0_spectrum.minute, xMin) == 0:
                 df_opus = pd.DataFrame(row_list).set_index('timestamp')
-                fn_out = t0_spectrum.strftime('opus_%Y%m%d_%H%M.csv')
+                fn_out = t0_spectrum.strftime('opus_%Y%m%d_%H%M.pkl')
                 print('writing file: ' + fn_out + '\n')
-                df_opus.to_csv(DOUT + fn_out)
+                df_opus.to_pickle(DOUT + fn_out)
 
 
 

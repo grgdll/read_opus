@@ -1,0 +1,20 @@
+2024-03-05
+
+Calibration of Opus
+
+First rinsed with fresh water and wiped lenses
+Flushed 1 L of MilliQ through it
+
+Measurements
+
+Lab_MilliQ, MilliQ from Glen's lab, 19.6
+Sarah_MilliQ, MilliQ used to prepare standards, 19.3
+05_uM, 4.9915 uM NO3 std, 18.8, Then rinsed with MilliQ
+10_uM, 10.2015 uM NO3 std, 18.9, then rinsed with MilliQ
+20_uM, 20.3504 uM NO3 std, 18.9, then rinsed with MilliQ
+30_uM, 30.9203 uM NO3 std, 19.0, then rinsed with MilliQ
+40_uM, 39.5628 uM NO3 std, 19.0, then rinsed with MilliQ
+Lab2_MilliQ, MilliQ after NO3 stds, 21.6
+LNSW, low-nuts seawater, 19.0
+
+Certified reference material (CP-1384, 24.8+/-0.3): 25.5649, 26.1715, 25.8221
